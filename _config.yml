@@ -13,7 +13,7 @@ locale                   : "en"
 title                    : "Tech talks by tortila"
 title_separator          : "|"
 name                     : "Oliwia Zaremba"
-description              : "An amazing website."
+description              : "Yet another blog about tech stuff"
 url                      : "https://tortila.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "tortila/tortila.github.io"
@@ -87,8 +87,8 @@ author:
   name             : "Oliwia Zaremba"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  location         : "Poznań, Poland"
+  email            : "oliwiagolec@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -97,13 +97,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/tortila"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "oliwia-zaremba-3678a7114"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
