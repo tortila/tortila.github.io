@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "default", "aqua", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -17,7 +17,7 @@ description              : "Yet another blog about tech stuff"
 url                      : "https://tortila.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "tortila/tortila.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # default teaser image
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Oliwia Zaremba"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Software quality and automation enthusiast"
   location         : "Poznań, Poland"
   email            : "oliwiagolec@gmail.com"
   uri              :
@@ -97,7 +97,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/tortila"
+  github           : "tortila"
   gitlab           :
   google_plus      :
   keybase          :
@@ -180,7 +180,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
