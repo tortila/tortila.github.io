@@ -251,6 +251,21 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: false
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      header:
+        overlay_image: /assets/images/lauren-mancke-60627.jpg
+        caption: "Photo by Lauren Mancke on [_Unsplash_](https://unsplash.com)"
+        overlay_filter: 0.5
