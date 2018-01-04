@@ -23,21 +23,7 @@ words_per_minute         : 200
 comments:
   provider               : "staticman_v2"
 staticman:
-  allowedFields: ["name", "email", "message"]
-  branch: "master"
-  commitMessage: "New comment"
-  filename: "comment-{@timestamp}"
-  format: "yaml"
-  generatedFields:
-    date:
-      type: "date"
-      options:
-        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  moderation: true
-  path: "_data/comments/{options.slug}"
-  requiredFields: ["name", "email", "message"]
-  transforms:
-    email: md5
+  branch: "master" # remaining config in staticman.yml
 reCaptcha:
   enabled: true
   siteKey: "6LdFNj8UAAAAAN6sTVe7zdaV6Vq_JpmDr-muDHOD"
