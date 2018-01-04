@@ -22,6 +22,7 @@ teaser                   : # default teaser image
 words_per_minute         : 200
 comments:
   provider               : "staticman_v2"
+staticman:
   allowedFields: ["name", "email", "message"]
   branch: "master"
   commitMessage: "New comment"
