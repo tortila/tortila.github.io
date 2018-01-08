@@ -35,7 +35,9 @@ in a non-desirable manner,
   * Almost all (97%) of tests failures with concurrency issue are due to concurrent accesses only on memory objects.
   * Majority (74%) of tests with order dependency issue are fixed by
 cleaning the shared state between test runs.
-5. Finally - some fixes to flaky tests (24%) modify the code under test (not the test code), and most of these cases (94%) **fix a bug in the code**.
+3. Finally - some fixes to flaky tests (24%) modify the code under test (not the test code), and most of these cases (94%) **fix a bug in the code**.
+
+The first two points make up for an interesting conclusion, that flaky tests can be very easily dealt with. Most of failures show a clear pattern and non-trivial issues are not common.
 
 ## Test failures treatment
 There are couple of ways failed tests can be dealt with. In the perfect world failed test is treated as a highest priority. Developers (or person responsible) stops doing anything and jumps quickly to investigate failed test and fix its root cause. Unfortunately, for various reasons, this is not always the case. So what are common real-world solutions?
@@ -46,10 +48,10 @@ Much like in *The Wire*, my beloved TV series, failed tests are quite often a su
 
 {% include figure image_path="https://artist.api.lv3.cdn.hbo.com/images/GVU2-Eg7Vl47DwvwIAWY0/detail?size=640x360&format=jpeg&partner=hbocom" alt="source: HBO" caption="A promise of crime rate decrease can be a powerful advantage for candidate running for mayor's office" %}
 
-When the crime rate stats were being manipulated in *The Wire*, a few things could have happened in Baltimore - one of them is, surprisingly, a real decrease in crime[^thinkprogress]:
+When the crime rate stats were being manipulated in *The Wire*, a few things could have happened in Baltimore - one of them is, surprisingly, a real decrease in crime (at least in theory)[^thinkprogress]:
 > Confidence matters a lot for a city. When people have the sense that conditions in a given city are good and improving, businesses will invest and that creates jobs. And people become more inclined to move in, raising property values. Higher property values mean more tax revenues for social services and for public safety. And more jobs, by all accounts, leads to less crime.
 
-In my experience, cooking up the results of tests just in a pursuit of much desired green light leads to a completely opposite situation. 
+In my experience, cooking up the results of tests just in a pursuit of much desired green light leads to a completely opposite situation. The results are being manipulated by disabling the failing tests. As a result the whole suite becomes a meaningless gate in software integration pipeline. The only reason for their existence is to pass. They no longer provide a valuable information about software under test.
 
 ---
 
