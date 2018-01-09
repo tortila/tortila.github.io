@@ -5,23 +5,26 @@ permalink: draft-why-failed-tests-are-awesome
 slug: draft-why-failed-tests-are-awesome
 comments: true
 ---
-## It's all about information
+## Embrace the failure
+I love failed tests. The sight of a red light on continuous integration system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced - and I have been given a chance to fix it.
 
-
-## Tests that fail randomly
+## 80% of the time, it works every time
 The main problem with failures is when they happen only *sometimes*. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see Fowler's article [^fowler] for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism.
 
 The problem is common for for all organizations that build and maintain software. Giant such as Google is no exception[^google]:
 > Almost 16% of our tests have some level of flakiness associated with them! This is a staggering number; it means that more than 1 in 7 of the tests written by our world-class engineers occasionally fail in a way not caused by changes to the code or tests.
 
 ~asda~
+### Have you tried turning it off and on again?
+There are various ways that the situation described above can be dealt with:
+1. Re-running until all tests pass. Normally a modern test runner is equipped with mechanism of marking test as flaky, and/or re-running any marked test a couple of times. Such logic can also be implemented additionally.
+2. Quarantine mechanism - contains of two phases: flakiness monitoring system and a sandbox for tests that were detected as flaky. The crucial part is to remove flaky test from the main path of integration/delivery pipeline and move them to a quarantine - so that they are still executed, but their result is not taken into consideration by quality gates. This solution is described in greater detail on Google blog[^google].
 
-There are various ways that this situation can be dealt with:
-1. Re-running until all tests pass. Normally a test runner is equipped with mechanism of marking test as flaky, and/or re-running a marked test a couple of times.
-2. Quarantine - see Google
-3.
+The examples above are just partial solutions. They won't scale as the number of tests increases. There will be just more flaky tests, and more re-runs, more time need to integrate a piece of code, and even more frustration. Both solutions lack a *mitigation* part.
 
+Let's take a look at quarantine example - as long as there's no additional mechanism for detecting the root cause of flakiness (or, let's aim higher, fixing it automatically), there needs to be a person dedicated for that job. With large amount of tests, I can imagine that this is the only sustainable solution. Re-running alone, without any mitigation step, is only a temporary solution, and should be treated as last resort.
 
+### Many faces of flakiness
 Authors from University of Illinois in *An Empirical Analysis of Flaky Tests* [^luo] performed an experiment, in which they searched for the main root causes of intermittently failing tests. They analyzed a number of open source projects from m the Apache Software Foundation, looking for commit messages that indicated a flaky test being fixed. What's more, authors analyzed each occurrence and classified them into 10 different categories, depending on the root cause of flakiness.
 
 Here are my favorite parts:
@@ -51,7 +54,7 @@ Much like in *The Wire*, my beloved TV series, failed tests are quite often a su
 When the crime rate stats were being manipulated in *The Wire*, a few things could have happened in Baltimore - one of them is, surprisingly, a real decrease in crime (at least in theory)[^thinkprogress]:
 > Confidence matters a lot for a city. When people have the sense that conditions in a given city are good and improving, businesses will invest and that creates jobs. And people become more inclined to move in, raising property values. Higher property values mean more tax revenues for social services and for public safety. And more jobs, by all accounts, leads to less crime.
 
-In my experience, cooking up the results of tests just in a pursuit of much desired green light leads to a completely opposite situation. The results are being manipulated by disabling the failing tests. As a result the whole suite becomes a meaningless gate in software integration pipeline. The only reason for their existence is to pass. They no longer provide a valuable information about software under test.
+In my experience, cooking up the results of tests just in a pursuit of much desired green light leads to a completely opposite situation. The results are being manipulated in a very simple way - by disabling the failing tests. As a result the whole suite becomes a meaningless gate in software integration pipeline. The only reason for their existence is to pass. They no longer provide a valuable information about software under test.
 
 ---
 
