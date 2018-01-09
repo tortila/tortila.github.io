@@ -6,15 +6,20 @@ slug: draft-why-failed-tests-are-awesome
 comments: true
 ---
 ## Embrace the failure
-I love failed tests. The sight of a red light on continuous integration system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced - and I have been given a chance to fix it.
+I love failed tests. The sight of a red light on continuous integration (CI) system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced - and I have been given a chance to solve the riddle and make the world a better place.
 
-## 80% of the time, it works every time
+If you think of the value of tests, it's all about information. Successful results give you a very simple piece of information: "All is fine". If you live by the motto "No news is good news", you might be satisfied with it. But in this scenario the only value that tests are presenting is *reassurance*. We all need a pat on the back from time to time, but the downside of it is that it never comes with a lesson. If you strive to improve (your software, your tests, your process, your CI pipeline, your testing environment) you need to have an opportunity to fail. Failed test, if treated properly, can give you information about all these subjects.
+
+How do you know your tests do what you expect them to do if they never failed?
+How do you know the bug that your tests discovered is still in your software if you disabled the test (because it kept failing and it was breaking your automated integration pipeline)?
+
+## Flaky tests. 80% of the time, it works every time
 The main problem with failures is when they happen only *sometimes*. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see Fowler's article [^fowler] for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism.
 
 The problem is common for for all organizations that build and maintain software. Giant such as Google is no exception[^google]:
 > Almost 16% of our tests have some level of flakiness associated with them! This is a staggering number; it means that more than 1 in 7 of the tests written by our world-class engineers occasionally fail in a way not caused by changes to the code or tests.
 
-~asda~
+The numbers are too high to be ignored, but what to to
 ### Have you tried turning it off and on again?
 There are various ways that the situation described above can be dealt with:
 1. Re-running until all tests pass. Normally a modern test runner is equipped with mechanism of marking test as flaky, and/or re-running any marked test a couple of times. Such logic can also be implemented additionally.
