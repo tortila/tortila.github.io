@@ -6,20 +6,20 @@ slug: draft-why-failed-tests-are-awesome
 comments: true
 ---
 ## Embrace the failure
-I love failed tests. The sight of a red light on continuous integration (CI) system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced - and I have been given a chance to solve the riddle and make the world a better place.
+I love failed tests. The sight of a red light on continuous integration system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced - and I have been given a chance to solve the riddle and make the world a better place.
 
 If you think of the value of tests, it's all about information. Successful results give you a very simple piece of information: "All is fine". If you live by the motto "No news is good news", you might be satisfied with it. But in this scenario the only value that tests are presenting is *reassurance*. We all need a pat on the back from time to time, but the downside of it is that it never comes with a lesson. If you strive to improve (your software, your tests, your process, your CI pipeline, your testing environment) you need to have an opportunity to fail. Failed test, if treated properly, can give you information about all these subjects.
 
-How do you know your tests do what you expect them to do if they never failed?
-How do you know the bug that your tests discovered is still in your software if you disabled the test (because it kept failing and it was breaking your automated integration pipeline)?
+But how do you know that your tests do what you expect them to do if they never fail? Or how do you know if the bug, that your tests discovered some time ago, is still in your software if you disabled the test (because it kept failing and it was breaking your delivery pipeline)?
 
 ## Flaky tests. 80% of the time, it works every time
-The main problem with failures is when they happen only *sometimes*. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see Fowler's article [^fowler] for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism.
+The main problem with failures is when they only happen sometimes. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see Fowler's article [^fowler] for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism. And finally, they create a lot of frustration.
 
 The problem is common for for all organizations that build and maintain software. Giant such as Google is no exception[^google]:
 > Almost 16% of our tests have some level of flakiness associated with them! This is a staggering number; it means that more than 1 in 7 of the tests written by our world-class engineers occasionally fail in a way not caused by changes to the code or tests.
 
-The numbers are too high to be ignored, but what to to
+The numbers are too high to be ignored, so when confidence in value of tests is at stake, the only reasonable solution is to try and solve the burning problem.
+
 ### Have you tried turning it off and on again?
 There are various ways that the situation described above can be dealt with:
 1. Re-running until all tests pass. Normally a modern test runner is equipped with mechanism of marking test as flaky, and/or re-running any marked test a couple of times. Such logic can also be implemented additionally.
@@ -27,7 +27,7 @@ There are various ways that the situation described above can be dealt with:
 
 The examples above are just partial solutions. They won't scale as the number of tests increases. There will be just more flaky tests, and more re-runs, more time need to integrate a piece of code, and even more frustration. Both solutions lack a *mitigation* part.
 
-Let's take a look at quarantine example - as long as there's no additional mechanism for detecting the root cause of flakiness (or, let's aim higher, fixing it automatically), there needs to be a person dedicated for that job. With large amount of tests, I can imagine that this is the only sustainable solution. Re-running alone, without any mitigation step, is only a temporary solution, and should be treated as last resort.
+Let's take a look at quarantine example - as long as there's no additional mechanism for detecting the root cause of flakiness (let alone fixing it automatically), there needs to be a person dedicated for that job. Nevertheless, with large amount of tests, this seems to be the most sustainable solution. Re-running alone, without any mitigation step, is only a temporary treatment, and should be treated as last resort. In both cases, without root cause analysis for each and every failure, tests value will be decreasing significantly with time.
 
 ### Many faces of flakiness
 Authors from University of Illinois in *An Empirical Analysis of Flaky Tests* [^luo] performed an experiment, in which they searched for the main root causes of intermittently failing tests. They analyzed a number of open source projects from m the Apache Software Foundation, looking for commit messages that indicated a flaky test being fixed. What's more, authors analyzed each occurrence and classified them into 10 different categories, depending on the root cause of flakiness.
@@ -35,8 +35,7 @@ Authors from University of Illinois in *An Empirical Analysis of Flaky Tests* [^
 Here are my favorite parts:
 1. Majority (77%) of all flaky tests fall into 3 categories:
   * asynchronous wait (45%) - test execution does not properly wait for asynchronously called result before using it,
-  * concurrency (20%) - different threads interacting
-in a non-desirable manner,
+  * concurrency (20%) - different threads interacting in a non-desirable manner,
   * test order dependency (12%) - test outcome depends on the order in which the tests are run.
 2. There are clear patterns to most of the failures in the top 3 categories:
   * Many (54%) of tests with asynchronous wait issue are fixed using `waitFor`.
@@ -45,21 +44,7 @@ in a non-desirable manner,
 cleaning the shared state between test runs.
 3. Finally - some fixes to flaky tests (24%) modify the code under test (not the test code), and most of these cases (94%) **fix a bug in the code**.
 
-The first two points make up for an interesting conclusion, that flaky tests can be very easily dealt with. Most of failures show a clear pattern and non-trivial issues are not common.
-
-## Test failures treatment
-There are couple of ways failed tests can be dealt with. In the perfect world failed test is treated as a highest priority. Developers (or person responsible) stops doing anything and jumps quickly to investigate failed test and fix its root cause. Unfortunately, for various reasons, this is not always the case. So what are common real-world solutions?
-### The good
-### The bad
-### The ugly
-Much like in *The Wire*, my beloved TV series, failed tests are quite often a subject of *juking the stats*. Why bother with test that is useless, when you can simply ignore it, skip it, disable it or remove it from the suite? The outcome is tempting - a green light from CI system, 100% of tests pass, a round of applause for a hero that made it happen.
-
-{% include figure image_path="https://artist.api.lv3.cdn.hbo.com/images/GVU2-Eg7Vl47DwvwIAWY0/detail?size=640x360&format=jpeg&partner=hbocom" alt="source: HBO" caption="A promise of crime rate decrease can be a powerful advantage for candidate running for mayor's office" %}
-
-When the crime rate stats were being manipulated in *The Wire*, a few things could have happened in Baltimore - one of them is, surprisingly, a real decrease in crime (at least in theory)[^thinkprogress]:
-> Confidence matters a lot for a city. When people have the sense that conditions in a given city are good and improving, businesses will invest and that creates jobs. And people become more inclined to move in, raising property values. Higher property values mean more tax revenues for social services and for public safety. And more jobs, by all accounts, leads to less crime.
-
-In my experience, cooking up the results of tests just in a pursuit of much desired green light leads to a completely opposite situation. The results are being manipulated in a very simple way - by disabling the failing tests. As a result the whole suite becomes a meaningless gate in software integration pipeline. The only reason for their existence is to pass. They no longer provide a valuable information about software under test.
+The first two points make up for an interesting conclusion: flaky tests can be very easily dealt with. Most of failures show a clear pattern and non-trivial issues are not common. But the revelation struck me in the third conclusion - more than 1 in every 5 flaky tests catches and exposes a bug in your software, and I don't know it because I'm ignoring it as "random failure" that's not worth my time investigating.
 
 ---
 
@@ -68,5 +53,3 @@ In my experience, cooking up the results of tests just in a pursuit of much desi
 [^luo]: Luo, Hariri, Eloussi, Marinov (2014). *An Empirical Analysis of Flaky Tests*.  [http://mir.cs.illinois.edu/marinov/publications/LuoETAL14FlakyTestsAnalysis.pdf](http://mir.cs.illinois.edu/marinov/publications/LuoETAL14FlakyTestsAnalysis.pdf)
 
 [^google]: Micco. *Flaky Tests at Google and How We Mitigate Them*.  [https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html)
-
-[^thinkprogress]: Yglesias. *Juking the Stats*. [https://thinkprogress.org/juking-the-stats-e9ba45af18e0/](https://thinkprogress.org/juking-the-stats-e9ba45af18e0/)
