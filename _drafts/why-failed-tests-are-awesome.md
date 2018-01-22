@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "DRAFT: Why failed tests are awesome"
+title:  "DRAFT: How I learned to stop worrying and love failing tests"
 permalink: draft-why-failed-tests-are-awesome
 slug: draft-why-failed-tests-are-awesome
 comments: true
