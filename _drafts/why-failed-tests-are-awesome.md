@@ -13,9 +13,9 @@ The core value of tests is all about information. Successful results give you a 
 But how do you know that your tests do what you expect them to do if they never fail? Or how do you know if the bug, that your tests discovered some time ago, is still in your software if you disabled the test (because it kept failing and it was so frustrating)?
 
 ### Flaky tests. 80% of the time, it works every time
-The main problem with failures is when they only happen sometimes. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see Fowler's article[^fowler] for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism. They may also be dangerous. And finally, they create a lot of frustration.
+The main problem with failures is when they only happen sometimes. This means that there are certain conditions in which the same set of tests can yield different results. There are many ways that non-determinism can be introduced in automated tests (see [Fowler's article](https://martinfowler.com/articles/nonDeterminism.html) for details). Until the root cause is identified, such tests are useless. What's more, they make the whole test suite useless - it no longer provides value as a reliable bug detection mechanism. They may also be dangerous. And finally, they create a lot of frustration.
 
-The problem is common for for all organizations that build and maintain software. Giant such as Google is no exception[^google]:
+The problem is common for for all organizations that build and maintain software. Giant such as Google is [no exception](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html):
 > Almost 16% of our tests have some level of flakiness associated with them! This is a staggering number; it means that more than 1 in 7 of the tests written by our world-class engineers occasionally fail in a way not caused by changes to the code or tests.
 
 The numbers are too high to be ignored, so when confidence in value of tests is at stake, the only reasonable solution is to try and solve the burning problem.
@@ -23,14 +23,14 @@ The numbers are too high to be ignored, so when confidence in value of tests is 
 ### Have you tried turning it off and on again?
 There are various ways that the situation described above can be dealt with:
 1. Re-running until all tests pass. Normally any modern test runner is equipped with mechanism of marking test as flaky, and/or re-running any marked test a couple of times. Such logic can also be implemented additionally.
-2. Quarantine mechanism - contains of two phases: flakiness monitoring system and a sandbox for tests that were detected as flaky. The crucial part is to remove flaky test from the main path of integration/delivery pipeline and move them to a quarantine - so that they are still executed, but their result is not taken into consideration by quality gates. This solution is described in greater detail on Google blog[^google].
+2. Quarantine mechanism - contains of two phases: flakiness monitoring system and a sandbox for tests that were detected as flaky. The crucial part is to remove flaky test from the main path of integration/delivery pipeline and move them to a quarantine - so that they are still executed, but their result is not taken into consideration by quality gates. This solution is described in greater detail on [Google blog](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html).
 
 The examples above are just partial solutions. They won't scale as the number of tests increases. There will be just more flaky tests, and more re-runs, more time need to integrate a piece of code, and even more frustration. Both solutions lack a *mitigation* part.
 
 Let's take a look at quarantine example - as long as there's no additional mechanism for detecting the root cause of flakiness (let alone fixing it automatically), there needs to be a person dedicated for that job. Nevertheless, with large amount of tests, this seems to be the most sustainable solution. Re-running alone, without any mitigation step, is only a temporary treatment, and should be treated as last resort. In both cases, without root cause analysis for each and every failure, tests value will be decreasing significantly with time.
 
 ### Many faces of flakiness
-Authors from University of Illinois in *An Empirical Analysis of Flaky Tests* [^luo] performed an experiment, in which they searched for the main root causes of intermittently failing tests. They analyzed a number of open source projects from m the Apache Software Foundation, looking for commit messages that indicated a flaky test being fixed. What's more, authors analyzed each occurrence and classified them into 10 different categories, depending on the root cause of flakiness.
+Authors from University of Illinois in [*An Empirical Analysis of Flaky Tests*](http://mir.cs.illinois.edu/marinov/publications/LuoETAL14FlakyTestsAnalysis.pdf) performed an experiment, in which they searched for the main root causes of intermittently failing tests. They analyzed a number of open source projects from m the Apache Software Foundation, looking for commit messages that indicated a flaky test being fixed. What's more, authors analyzed each occurrence and classified them into 10 different categories, depending on the root cause of flakiness.
 
 Here are my favorite parts:
 1. Majority (77%) of all flaky tests fall into 3 categories:
@@ -55,10 +55,20 @@ With this approach, I have room for failure, so I can learn about: code, test, t
 
 ---
 
-[^fowler]: Fowler. *Eradicating non-determinism in tests*.  [https://martinfowler.com/articles/nonDeterminism.html](https://martinfowler.com/articles/nonDeterminism.html)
+[^quirks]: For example, I once learned the hard way the difference between `==` and `is` operators in Python, and how it caches small integer objects, when my tests (which used `is` for comparing two integers) were passing for small values and failing for bigger ones. See for yourself:
+```python
+>>> a = 256
+>>> b = 256
+>>> a == b
+True
+>>> a is b
+True
+>>> a = 257
+>>> b = 257
+>>> a == b
+True
+>>> a is b
+False
 
-[^luo]: Luo, Hariri, Eloussi, Marinov (2014). *An Empirical Analysis of Flaky Tests*.  [http://mir.cs.illinois.edu/marinov/publications/LuoETAL14FlakyTestsAnalysis.pdf](http://mir.cs.illinois.edu/marinov/publications/LuoETAL14FlakyTestsAnalysis.pdf)
-
-[^google]: Micco. *Flaky Tests at Google and How We Mitigate Them*.  [https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html)
-
-[^quirks]: For example, I once learned the hard way the difference between `==` and `is` operators in Python, and how it caches small integer objects, when my tests were passing for small values and failing for bigger ones. Of course, the value was calculated dynamically depending on the state of database!  https://stackoverflow.com/questions/132988/is-there-a-difference-between-and-is-in-python
+```
+ Of course, the value in my tests was calculated dynamically, depending on the state of database - so the test was flaky!
