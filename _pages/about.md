@@ -3,7 +3,7 @@ layout: single
 permalink: /about/
 title: "About this blog"
 slug: about
-comments: true
+comments: false
 ---
 Oh, hey -- I'm Oliwia and this is my blog. The idea of starting it was sparked by a one particular topic I wanted to write about. I will try to add some more posts in the near future. I have a cat.
 
