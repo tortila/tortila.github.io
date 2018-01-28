@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Dealing with flaky tests"
-date:   2018-01-28 20:00:00 +0100
+date:   2018-01-28 20:30:00 +0100
 permalink: dealing-with-flaky-tests
 tags: testing
 slug: dealing-with-flaky-tests
@@ -55,11 +55,13 @@ The biggest turning point in my approach to any kind of automated tests was when
 
 But when I'm maintaining the tests, I do my best to analyze and drill down the exact issue that caused the failure, and fix for good (hopefully). As a trivial example, when I spot an issue regarding asynchronous wait on some resource, the easiest fix is to increase the timeout. This is not a stable solution, because there's no guarantee the resource will be always on time. A better solution in this particular case is conditional wait for resource with polling (mentioned `waitFor`).
 
-With this approach, I have room for failure, so I can learn about: code, test, test environment, infrastructure, some specific language quirks and more[^quirks]. It's sustainable as long as the cause of failures is diagnosed quickly. It doesn't mean that it has to be fixed immediately - it's enough to have a plan for fixing along with priority. Regardless of the root cause, it's great to have a quarantine mechanism in place. An isolated environment where both flaky tests and those that discovered a known failure can keep giving you information, without decreasing the speed or reliability of your software delivery.
+With this approach, I have room for failure, so I can learn about: code, test, test environment, infrastructure, some specific language quirks and more. It's sustainable as long as the cause of failures is diagnosed quickly. It doesn't mean that it has to be fixed immediately - it's enough to have a plan for fixing along with priority. Regardless of the root cause, it's great to have a quarantine mechanism in place. An isolated environment where both flaky tests and those that discovered a known failure can keep giving you information, without decreasing the speed or reliability of your software delivery.
 
 ---
 
-[^quirks]: For example, I once learned the hard way the difference between `==` and `is` operators in Python, and how it caches small integer objects, when my tests (which used `is` for comparing two integers) were passing for small values and failing for bigger ones. See for yourself:
+### Footnotes
+
+For example, I once learned the hard way the difference between `==` and `is` operators in Python, and how it caches small integer objects, when my tests (which used `is` for comparing two integers) were passing for small values and failing for bigger ones. See for yourself:
 ```python
 >>> a = 256
 >>> b = 256
@@ -73,6 +75,5 @@ True
 True
 >>> a is b
 False
-
 ```
  Of course, the value in my tests was calculated dynamically, depending on the state of database - so the test was flaky!
