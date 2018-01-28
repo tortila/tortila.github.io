@@ -1,8 +1,10 @@
 ---
 layout: single
-title:  "DRAFT: How I learned to stop worrying and love failing tests"
-permalink: draft-why-failed-tests-are-awesome
-slug: draft-why-failed-tests-are-awesome
+title:  "Dealing with flaky tests"
+date:   2018-01-28 20:00:00 +0100
+permalink: dealing-with-flaky-tests
+tags: testing
+slug: dealing-with-flaky-tests
 comments: true
 header:
   image: assets/images/tim-gouw-128115.jpg
