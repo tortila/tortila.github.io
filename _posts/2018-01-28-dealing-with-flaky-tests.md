@@ -24,7 +24,8 @@ I'm pretty sure I'm not the only one guilty of disabling the tests when they fai
 
 ## 80% of the time, it works every time
 As [Fowler](https://martinfowler.com/articles/nonDeterminism.html) puts it:
- > A test is non-deterministic when it passes sometimes and fails sometimes, without any noticeable change in the code, tests, or environment. Such tests fail, then you re-run them and they pass. {: .text-justify}
+ > A test is non-deterministic when it passes sometimes and fails sometimes, without any noticeable change in the code, tests, or environment. Such tests fail, then you re-run them and they pass.
+{: .text-justify}
 
 Sometimes these tests are being referred to as *flaky*[^randomly]. There are many ways that non-determinism can be introduced in automated tests - the more complex setup, the more factors can play their role. Until the root cause is identified, such tests are quite dangerous. They make the whole test suite unreliable - it no longer provides value as a bug detection mechanism. And what's more important, they create a lot of frustration, which may lead to even more dangerous events.
 {: .text-justify}
