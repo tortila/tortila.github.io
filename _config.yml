@@ -10,7 +10,7 @@ minimal_mistakes_skin    : "contrast" # "air", "default", "aqua", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "Tech talks by tortila"
+title                    : "Tech talks"
 title_separator          : "|"
 name                     : "Oliwia Zaremba"
 description              : "Yet another blog about tech stuff"
