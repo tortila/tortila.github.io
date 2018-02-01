@@ -8,6 +8,7 @@ slug: dealing-with-flaky-tests
 comments: true
 header:
   image: assets/images/tim-gouw-128115.jpg
+  og_image: assets/images/tim-gouw-128115.jpg
 ---
 ## Embrace the failure
 I love failed tests, I really do. The sight of a red light on continuous integration system on Monday morning is my favorite way to start a week. Whenever I spot a failed test, I'm thrilled - mostly because it means there's something I'm going to learn. There's something that went wrong, something that got broken, or flaw that was hidden until now just resurfaced. And there's no best way to learn about it than from tests!
