@@ -16,7 +16,7 @@ comments: false
       {{ post.name }}
     </a>
   </h2>
-  <p>{{ post.content }}</p>
+  <p>{{ post.content | markdownify }}</p>
   {% endfor %}
   <br>
 {% endfor %}
