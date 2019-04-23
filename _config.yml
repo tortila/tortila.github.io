@@ -220,6 +220,8 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  - external_publications
 
 # Defaults
 defaults:
