@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: /publications/
-title: "My publications elsewhere"
+permalink: /elsewhere/
+title: "Me elsewhere"
 comments: false
 ---
 
