@@ -10,15 +10,16 @@ minimal_mistakes_skin    : "dirt" #"contrast", "air", "default", "aqua", "dark",
 
 # Site Settings
 locale                   : "en"
-title                    : "Tech talks"
+title                    : "Ideas and rambling thoughts"
 title_separator          : "|"
 name                     : "Oliwia Zaremba"
-description              : "Yet another blog about tech stuff"
+description              : "My space in the Internets"
+masthead_title           : "Home"
 url                      : "https://tortila.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "tortila/tortila.github.io"
 teaser                   : # default teaser image
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 comments:
   provider               : "staticman_v2"
@@ -64,8 +65,8 @@ analytics:
 # Site Author
 author:
   name             : "Oliwia Zaremba"
-  avatar           : "/assets/images/bio.jpg"
-  bio              : "Software Engineer"
+  avatar           : "/assets/images/me_squared.jpg"
+  bio              : "Cats, movies and wine."
   location         : "Berlin, Germany"
   email            : "oliwiagolec@gmail.com"
   uri              :
@@ -231,7 +232,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
