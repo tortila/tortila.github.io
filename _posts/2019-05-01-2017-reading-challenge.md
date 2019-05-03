@@ -18,12 +18,10 @@ header:
 Below is the list of the books I have read in 2017, without the chronological order.
 
 ### The thrilling adventures of Ijon Tichy
-- Author: Stanisław Lem
-- Genre: science fiction
-- Titles:
-  - [The Star Diaries][tichy1]
-  - [Memoirs of a Space Traveler][tichy2]
-  - [The Futurological Congress][tichy3]
+
+- _[The Star Diaries][tichy1]_
+- _[Memoirs of a Space Traveler][tichy2]_
+- _[The Futurological Congress][tichy3]_, all by S. Lem
 
 [tichy1]: https://www.goodreads.com/book/show/889418.The_Star_Diaries
 [tichy2]: https://www.goodreads.com/book/show/88321.Memoirs_of_a_Space_Traveler
@@ -34,16 +32,14 @@ If I read these books as a kid, the main character, [Ijon Tichy], would definite
 [Ijon Tichy]: https://en.wikipedia.org/wiki/Ijon_Tichy
 
 ### Lem, the father of Polish science fiction
-- Author: Stanisław Lem
-- Genre: science fiction
-- Titles:
-  - [His Master's Voice]
-  - [Eden]
-  - [The Invincible]
+
+- _[His Master's Voice]_
+- _[Eden]_
+- _[The Invincible]_, all by S. Lem
 
 Stanisław Lem, a famous and respected Polish sci-fi author, wrote plentiful books that were translated to over 40 languages and sold in over 30 million copies. A famous American author, Philip K. Dick, [created an interesting theory in his letter to FBI][fbi-theory], claiming that Lem is a collective of authors rather than a single person (pointing to his varied style and language as a proof) and works for the communist party, aiming for taking control over the public opinion. Whether one believes him or not, the genius of Lem is undeniable - his writing reached far beyond the genre .
 
-In [His Master's Voice] he explores the subject of searching for extraterrestrial intelligence ([SETI]) with a very critical mindset - the signal received from another form of life is impossible to decode, and for many different reasons. Even if a single information was successfully extracted, it could mean nothing without a common language or cultural context. The other two books I've read, [Eden] and [The Invincible], share a similar subject of the relationship between different life domains. In The Invincible, the extraterrestrial form of life that the characters come across is a swarm of insect-like robots with a hive mind (which reminds me of [Ender's Game]), and in Eden it's an almost Orwellian bio-engineered society of soldiers and their victims, living in a ghettos. In both cases the astronauts visit a foreign planet they know nothing about, and in both cases they fail to establish a lasting relationship, and yet manage to introduce a meaningful level of chaos and destruction. This topic is also deeply explored in [Solaris], which is my favourite book written by Lem, and one of the favourite books in general.
+In _[His Master's Voice]_ he explores the subject of searching for extraterrestrial intelligence ([SETI]) with a very critical mindset - the signal received from another form of life is impossible to decode, and for many different reasons. Even if a single information was successfully extracted, it could mean nothing without a common language or cultural context. The other two books I've read, _[Eden]_ and _[The Invincible]_, share a similar subject of the relationship between different life domains. In _The Invincible_, the extraterrestrial form of life that the characters come across is a swarm of insect-like robots with a hive mind (which reminds me of _[Ender's Game]_), and in _Eden_ it's an almost Orwellian bio-engineered society of soldiers and their victims, living in a ghettos. In both cases the astronauts visit a foreign planet they know nothing about, and in both cases they fail to establish a lasting relationship, and yet manage to introduce a meaningful level of chaos and destruction. This topic is also deeply explored in _[Solaris]_, which is my favourite book written by Lem, and one of the favourite books in general.
 
 {% include figure image_path="https://i.etsystatic.com/8707839/r/il/e0152d/1038075712/il_794xN.1038075712_4ywk.jpg" caption="All Lem's books were recently re-published in Polish with the most beautiful covers. Some of the covers can be also <a href='https://www.etsy.com/pl/listing/244539144/the-invincible-stanisaw-lem-classic'>bought as posters</a> directly from the designer on Etsy." %}{: .align-center}
 
@@ -56,11 +52,9 @@ In [His Master's Voice] he explores the subject of searching for extraterrestria
 [Solaris]: https://www.goodreads.com/book/show/95558.Solaris
 
 ### The Masterpiece
-- Author: Marcel Proust
-- Title: [Swann's Way] (volume 1 of [Remembrance of Things Past])
-- Genre: pseudo-autobiographical novel
+-  _[Swann's Way]_ (volume 1 of _[Remembrance of Things Past]_) by Marcel Proust
 
-If any form of extraterrestrial life ever contacted me and asked: "What is the biggest masterpiece of the written word of your species?" I wouldn't think twice - it's definitely [Remembrance of Things Past], all 7 volumes, all 4,000 pages of it. Some critics call it a pseudo-autobiographical novel because of how much the narrator and the events of the book resemble these of the author. The first thing that strikes me in [Swann's Way], the first volume of the series, is that even though the main character is still a young child, he seems to be able to process and describe emotions on a level that only very few adults could. So when he describes the misery of being dismissed from a dinner with guests, and having to go to sleep, it's really heart-breaking. I think this kind of exaggeration is a really clever way to make adults feel like a child would do - when mom doesn't come for a good night kiss the child feels like the world is falling apart. Another great thing about the book is that it pictures the life of noble families in the early XX century in Paris, so reading the book is like entering an idyllic, perfect world. In this world the biggest crime is to salute and bow to someone you were not introduced to (which can be only done by a common acquaintance) on your afternoon walk through Elysian Fields.
+If any form of extraterrestrial life ever contacted me and asked: "What is the biggest masterpiece of the written word of your species?" I wouldn't think twice - it's definitely _[Remembrance of Things Past]_, all 7 volumes, all 4,000 pages of it. Some critics call it a pseudo-autobiographical novel because of how much the narrator and the events of the book resemble these of the author (which directly contradicts the concept of _[The Death of the Author]_). The first thing that strikes me in _[Swann's Way]_, the first volume of the series, is that even though the main character is still a young child, he seems to be able to process and describe emotions on a level that only very few adults could. So when he describes the misery of being dismissed from a dinner with guests, and having to go to sleep, it's really heart-breaking. I think this kind of exaggeration is a really clever way to make adults feel like a child would do - when mom doesn't come for a good night kiss the child feels like the world is falling apart. Another great thing about the book is that it pictures the life of noble families in the early XX century in Paris, so reading the book is like entering an idyllic, perfect world. In this world the biggest crime is to salute and bow to someone you were not introduced to (which can be only done by a common acquaintance) on your afternoon walk through Elysian Fields.
 
 Despite the idyllic setting, it's not really a book you could read on your daily commute. The language is pretty demanding, and the page-long sentences take some time to sink in. The plot starts with adult Marcel taking a bite of [Madeleine], and the taste of it takes him back to his memories from childhood. Later on there are similar mechanisms used all over the book to jump from one context to another, sometimes one recollection starts within another, then it all comes back to the main story line, almost like a fractal. It takes the genius of Marcel Proust to use this unusual form of narration so subtly, and yet with such a jaw-dropping effect.
 
@@ -69,14 +63,16 @@ I only wish that the series was published with beautiful covers and on a nice pa
 [Swann's Way]: https://www.goodreads.com/book/show/12749.Swann_s_Way
 [Remembrance of Things Past]: https://en.wikipedia.org/wiki/In_Search_of_Lost_Time
 [Madeleine]: https://en.wikipedia.org/wiki/Madeleine_(cake)
+[The Death of the Author]: https://en.wikipedia.org/wiki/The_Death_of_the_Author
 
 ### The Spice must flow
-- Author: Frank Herbert
-- Titles:
-  - [Dune]
-  - [Dune Messiah]
-  - [Children of Dune]
-  - [God Emperor of Dune]
+
+- _[Dune]_
+- _[Dune Messiah]_
+- _[Children of Dune]_
+- _[God Emperor of Dune]_, all by Frank Herbert
+
+{% include figure image_path="https://danienlared.files.wordpress.com/2011/02/siudmak-3.gif" caption="The Polish edition was published with amazing illustrations by <a href='https://www.wikiart.org/en/wojciech-siudmak/all-works#!#filterName:all-paintings-chronologically,resultType:masonry'>Wojciech Siudmak</a>" %}{: .align-center}
 
 [Dune]: https://www.goodreads.com/book/show/234225.Dune
 [Dune Messiah]: https://www.goodreads.com/book/show/106.Dune_Messiah
@@ -84,71 +80,64 @@ I only wish that the series was published with beautiful covers and on a nice pa
 [God Emperor of Dune]: https://www.goodreads.com/book/show/42432.God_Emperor_of_Dune
 
 ### One Hundred Years of Overrated
-- Author: Gabriel García Márquez
-- Genre: fiction, magical realism
-- Title: [One Hundred Years of Solitude]
+- _[One Hundred Years of Solitude]_ by Gabriel García Márquez
 
-Let me start by admitting, that I haven't finished the book. I keep reading about how fascinating it is, and how jaw-dropping the ending is, but I guess I will never know. 
+Let me start by admitting, that I haven't finished the book. I keep reading about how fascinating and jaw-dropping the ending is, but I guess I will never know.
 
 [One Hundred Years of Solitude]: https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude
 
 ### The dark tale from Prague
-- Author: Gustav Meyrink
-- Genre: fiction, gothic
-- Title: [The Golem]
+- _[The Golem]_ by Gustav Meyrink
 
 [The Golem]: https://www.goodreads.com/book/show/99794.The_Golem
 
 ### An intellectual analysis of post-war Polish society
-- Author: Czesław Miłosz
-- Genre: non-fiction, essays
-- Titles:
-  - [The Captive Mind]
-  - [Legends of Modernity]
+- _[The Captive Mind]_
+- _[Legends of Modernity]_, both by Czesław Miłosz
 
 [The Captive Mind]: https://www.goodreads.com/book/show/145660.The_Captive_Mind
 [Legends of Modernity]: https://www.goodreads.com/book/show/776897.Legends_of_Modernity
 
 ### Graphic novels
-- Author: Art Spiegelman
-- Title: [Maus]
+- _[Maus]_ by Art Spiegelman
 
 [Maus]: https://www.goodreads.com/book/show/15195.The_Complete_Maus
 
-- Author: Manu Larcent
-- Title: [Ordinary Victories]
+- _[Ordinary Victories]_ by Manu Larcent
 
 [Ordinary Victories]: https://www.goodreads.com/book/show/435879.Ordinary_Victories
 
-- Authors: Sebastian Skrobol,  Dennis Wojda, Bartosz Sztybor
-- Title: [Mute]
+- _[Mute]_ by Sebastian Skrobol, Dennis Wojda, Bartosz Sztybor
 
 [Mute]: https://www.goodreads.com/book/show/32938830-mute
 
-- Authors: Tomasz Pstrągowski,  Maciej Pałka
-- Title: [Jak schudnąć 30kg?] (literal translation: How to loose 30kg?)
+- _[Jak schudnąć 30kg?]_ (literal translation: _How to loose 30kg?_) by Tomasz Pstrągowski, Maciej Pałka
 
 [Jak schudnąć 30kg?]: https://www.goodreads.com/book/show/34531378-jak-schudn-30-kg
 
-- Author: Charles M. Schulz
-- Title: [The Complete Peanuts, Vol. 10: 1969–1970]
+- _[The Complete Peanuts, Vol. 10: 1969–1970]_ by Charles M. Schulz
 
 [The Complete Peanuts, Vol. 10: 1969–1970]: https://www.goodreads.com/book/show/54593.The_Complete_Peanuts_Vol_10
 
+I don't remember when it all started, but I'm really fascinated with graphic novels. They're mostly quick to go through and great for imagination. I love the variety of topics that can be dealt with in the graphical medium. In order to demonstrate it, let me focus on two very contrasting examples from the list above.
+
+_[Maus]_ is my go-to answer whenever someone asks me for recommendation for starting with graphical novels. It's a story of Spiegelman's father - a Polish Jew and Holocaust survivor - told many years after the dreadful events that changed him forever. The book is sometimes regarded as controversial, not only because of the fact that it's a "comic book about Holocaust", but also because the author decided to picture all characters as animals. And so: the Jews are pictured as mice (German "Maus" literally means "mouse"), the Germans as cats that hunt them, and the Polish as pigs. The illustrations are black and white and their character changes depending on the emotional state of the characters. The most interesting element of the book for me is how it pictures the consequences of trauma of the main character - many years after the Holocaust, living a comfortable life in the US, he's hostile towards people of colour and shows the same xenophobic behaviour as his oppressors used to show towards him.
+
+Peanuts is on the exact opposite side of the comics spectrum. It's a huge collection of 4-panel comic strips that were published continuously for 50 years and tells a story of Charlie Brown, his dog Snoopy and their close friends. In this world the adults almost don't exist, and the children never grow up. The style of the illustrations is very minimalistic, and it forces readers to focus on subtle nuances and really dive into their relationships. Originally it was released on a daily basis in newspaper, but nowadays a printed version _The Complete Peanuts_ is available. Because of the huge popularity, the books are hard to get, especially the early volumes - fortunately the strips are also [available online](https://www.gocomics.com/peanuts).
+
+{% include figure image_path="https://assets.amuniversal.com/59de8250fb900130174f001dd8b71c47" caption="I find it amusing that no one questions why the dog (Snoopy) is an aspiring writer. Source (and more Peanuts strips): <a href='https://www.gocomics.com/peanuts/1987/07/01'>GoComics.com</a>" %}{: .align-center}
+
 ### The underwhelming Witcher series
-- Author: Andrzej Sapkowski
-- Genre: fantasy
-- Titles:
-  - [The Last Wish]
-  - [Sword of Destiny]
-  - [Blood of Elves]
-  - [Time of Contempt]
+- _[The Last Wish]_
+- _[Sword of Destiny]_
+- _[Blood of Elves]_
+- _[Time of Contempt]_, all by Andrzej Sapkowski
 
 [The Last Wish]: https://www.goodreads.com/book/show/1128434.The_Last_Wish
 [Sword of Destiny]: https://www.goodreads.com/book/show/1128437.Miecz_przeznaczenia
 [Blood of Elves]: https://www.goodreads.com/book/show/6043781-blood-of-elves
 [Time of Contempt]: https://www.goodreads.com/book/show/68453.Czas_pogardy
 
-I've read [The Last Wish] many years ago and loved it, but after a very amusing play-through of [The Witcher 3: Wild Hunt] I was tempted to finally give the whole series of books a go. Let me just say that I should've stopped after the first, maybe the second book. The plot is very far-fetched, the characters are flat and there's not much going on apart from people looking for other people and killing each other. I remember I was particularly grossed out by certain episodes and events, e.g. the fact that the Lodge of Sorceresses seemed to only have two ambitions: to have the most see-through evening dress to impress Geralt, and to sleep with Geralt. The books are quick to read, and they are now famous because of the game, but by no means are they good fantasy books - so I can't understand the overall sentiment.
+I've read _[The Last Wish]_ many years ago and loved it, and after a very enjoyable play-through of _[The Witcher 3: Wild Hunt]_ I was tempted to finally give the whole series of books a go. Let me just say that I should've stopped after the first, maybe the second book. The plot is very far-fetched, the characters are flat and there's not much going on apart from people looking for other people and killing each other. I remember I was particularly grossed out by certain episodes and events, e.g. the fact that the Lodge of Sorceresses seemed to only have two ambitions: to have the most see-through evening dress to impress Geralt, and to sleep with Geralt. The books are quick to read, and they are now famous because of the game, but by no means are they good fantasy books - so I can't understand the overall sentiment.
 
 [The Witcher 3: Wild Hunt]: https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt
