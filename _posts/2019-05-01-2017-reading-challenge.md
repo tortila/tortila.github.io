@@ -82,21 +82,31 @@ I only wish that the series was published with beautiful covers and on a nice pa
 ### One Hundred Years of Overrated
 - _[One Hundred Years of Solitude]_ by Gabriel García Márquez
 
-Let me start by admitting, that I haven't finished the book. I keep reading about how fascinating and jaw-dropping the ending is, but I guess I will never know.
+I haven't finished the book. I keep hearing about how fascinating and jaw-dropping the ending is, but I guess I will never know. Maybe the book is just not for me, or maybe I had too many expectations of it. I found the book boring and the events and characters forced.
 
 [One Hundred Years of Solitude]: https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude
 
 ### The dark tale from Prague
 - _[The Golem]_ by Gustav Meyrink
 
-[The Golem]: https://www.goodreads.com/book/show/99794.The_Golem
+It's a mysterious tale full of symbolism and esotericism, Golem itself is a character from a Jewish legend. I recommend it for anyone who likes any of the following books: _[Crime and Punishment]_ by Fyodor Dostoyevsky, _[Steppenwolf]_ by Herman Hesse or _[The Trial]_ by Franz Kafka.
 
-### An intellectual analysis of post-war Polish society
+[The Golem]: https://www.goodreads.com/book/show/99794.The_Golem
+[Crime and Punishment]: https://www.goodreads.com/book/show/7144.Crime_and_Punishment
+[Steppenwolf]: https://www.goodreads.com/book/show/16631.Steppenwolf
+[The Trial]: https://www.goodreads.com/book/show/17690.The_Trial
+
+### The genius émigré
 - _[The Captive Mind]_
 - _[Legends of Modernity]_, both by Czesław Miłosz
 
+[Miłosz], a poet and prose writer, escaped to France and then to the USA after the new post-war communist authorities of Poland threatened his safety. In _[The Captive Mind]_ he assesses Stalinism and - using fictional characters based on real Polish artists of that time - analyses different attitudes towards the system of people who, unlike him, decided to stay in the country. He shows deep compassion and understanding, even for people who seem to live for the system (and not against it), putting the most criticism on the system itself. _[Legends of Modernity]_ is a set of essays analysing genius minds of literature and philosophy, and letters he exchanged with another writer.
+
+To me, reading Miłosz is like visiting a world that is no more. The way he puts together his thoughts and the sharp, analytical approach he uses to describe his opinions makes me regard him as one of the most intelligent people that I know of. And I'm not alone - he was a professor at University of California at Berkeley where he was offered a honorary doctorate, and later won a Nobel Prize in Literature.
+
 [The Captive Mind]: https://www.goodreads.com/book/show/145660.The_Captive_Mind
 [Legends of Modernity]: https://www.goodreads.com/book/show/776897.Legends_of_Modernity
+[Miłosz]: https://en.wikipedia.org/wiki/Czes%C5%82aw_Mi%C5%82osz
 
 ### Graphic novels
 - _[Maus]_ by Art Spiegelman
@@ -118,12 +128,13 @@ Let me start by admitting, that I haven't finished the book. I keep reading abou
 - _[The Complete Peanuts, Vol. 10: 1969–1970]_ by Charles M. Schulz
 
 [The Complete Peanuts, Vol. 10: 1969–1970]: https://www.goodreads.com/book/show/54593.The_Complete_Peanuts_Vol_10
+[Peanuts]: https://en.wikipedia.org/wiki/Peanuts
 
 I don't remember when it all started, but I'm really fascinated with graphic novels. They're mostly quick to go through and great for imagination. I love the variety of topics that can be dealt with in the graphical medium. In order to demonstrate it, let me focus on two very contrasting examples from the list above.
 
-_[Maus]_ is my go-to answer whenever someone asks me for recommendation for starting with graphical novels. It's a story of Spiegelman's father - a Polish Jew and Holocaust survivor - told many years after the dreadful events that changed him forever. The book is sometimes regarded as controversial, not only because of the fact that it's a "comic book about Holocaust", but also because the author decided to picture all characters as animals. And so: the Jews are pictured as mice (German "Maus" literally means "mouse"), the Germans as cats that hunt them, and the Polish as pigs. The illustrations are black and white and their character changes depending on the emotional state of the characters. The most interesting element of the book for me is how it pictures the consequences of trauma of the main character - many years after the Holocaust, living a comfortable life in the US, he's hostile towards people of colour and shows the same xenophobic behaviour as his oppressors used to show towards him.
+_[Maus]_ is my go-to answer whenever someone asks me for recommendation for starting with graphical novels. It's a story of Spiegelman's father - a Polish Jew and Holocaust survivor - told many years after the dreadful events that changed him forever. The book is sometimes regarded as controversial, not only because of the fact that it's a "comic book about Holocaust", but also because the author decided to picture all characters as animals. And so: the Jews are pictured as mice (German "Maus" literally means "mouse"), the Germans as cats that hunt them, and the Poles as pigs. The illustrations are black and white and their character changes depending on the emotional state of the characters. The most interesting element of the book for me is how it pictures the consequences of trauma of the main character - many years after the Holocaust, living a comfortable life in the US, he's hostile towards people of colour and shows the same xenophobic behaviour as his oppressors used to show towards him.
 
-Peanuts is on the exact opposite side of the comics spectrum. It's a huge collection of 4-panel comic strips that were published continuously for 50 years and tells a story of Charlie Brown, his dog Snoopy and their close friends. In this world the adults almost don't exist, and the children never grow up. The style of the illustrations is very minimalistic, and it forces readers to focus on subtle nuances and really dive into their relationships. Originally it was released on a daily basis in newspaper, but nowadays a printed version _The Complete Peanuts_ is available. Because of the huge popularity, the books are hard to get, especially the early volumes - fortunately the strips are also [available online](https://www.gocomics.com/peanuts).
+_[Peanuts]_ is on the exact opposite side of the comics spectrum. It's a huge collection of 4-panel comic strips that were published continuously for 50 years and tells a story of Charlie Brown, his dog Snoopy and their close friends. In this world the adults almost don't exist, and the children never grow up. The style of the illustrations is very minimalistic, and it forces readers to focus on subtle nuances and really dive into their relationships. Originally it was released on a daily basis in newspaper, but nowadays a printed version _The Complete Peanuts_ is available. Because of the huge popularity, the books are hard to get, especially the early volumes - fortunately the strips are also [available online](https://www.gocomics.com/peanuts).
 
 {% include figure image_path="https://assets.amuniversal.com/59de8250fb900130174f001dd8b71c47" caption="I find it amusing that no one questions why the dog (Snoopy) is an aspiring writer. Source (and more Peanuts strips): <a href='https://www.gocomics.com/peanuts/1987/07/01'>GoComics.com</a>" %}{: .align-center}
 
@@ -138,6 +149,6 @@ Peanuts is on the exact opposite side of the comics spectrum. It's a huge collec
 [Blood of Elves]: https://www.goodreads.com/book/show/6043781-blood-of-elves
 [Time of Contempt]: https://www.goodreads.com/book/show/68453.Czas_pogardy
 
-I've read _[The Last Wish]_ many years ago and loved it, and after a very enjoyable play-through of _[The Witcher 3: Wild Hunt]_ I was tempted to finally give the whole series of books a go. Let me just say that I should've stopped after the first, maybe the second book. The plot is very far-fetched, the characters are flat and there's not much going on apart from people looking for other people and killing each other. I remember I was particularly grossed out by certain episodes and events, e.g. the fact that the Lodge of Sorceresses seemed to only have two ambitions: to have the most see-through evening dress to impress Geralt, and to sleep with Geralt. The books are quick to read, and they are now famous because of the game, but by no means are they good fantasy books - so I can't understand the overall sentiment.
+I've read _[The Last Wish]_ many years ago and loved it, and after a very enjoyable play-through of _[The Witcher 3: Wild Hunt]_ I was tempted to finally give the whole series of books a go. Let me just say that I should've stopped after the first, maybe the second book. The plot is very far-fetched, the characters are flat and there's not much going on apart from people looking for other people and killing each other. The fact that the Lodge of Sorceresses seemed to only have two ambitions: to have the most see-through evening dress to impress Geralt, and to sleep with Geralt, was only one of many aspects that grossed me out. The books are quick to read, and they are now famous because of the game, but by no means are they good fantasy books - so I can't understand the overall sentiment.
 
 [The Witcher 3: Wild Hunt]: https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt
