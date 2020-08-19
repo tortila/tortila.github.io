@@ -21,79 +21,19 @@ repository               : "tortila/tortila.github.io"
 teaser                   : # default teaser image
 breadcrumbs              : true
 words_per_minute         : 200
-comments:
-  provider               : "staticman_v2"
-staticman:
-  branch: "master" # remaining config in staticman.yml
-reCaptcha:
-  enabled: true
-  siteKey: "6LdFNj8UAAAAAN6sTVe7zdaV6Vq_JpmDr-muDHOD"
-  secret: "qjQslvmbEZ9naa3AWXe9Dv62hpkrrAjfSRNkbsfAVD/osJ+ivjo12EOmFxIhbXTdla2WpfQSMGcfO+MiGnNyFEQnHuaNEtApKmiaAiz/mrulC6bxpc4KKJ5eqEI+/U1IBPfntgFmAzdl9x3jI2sMSDZQjsxWFn+pRgeV9S07aqo="
-
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : # true, false (default)
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "UA-112037961-1"
 
 
 # Site Author
 author:
   name             : "Oliwia Zaremba"
   avatar           : "/assets/images/me_squared.jpg"
-  bio              : "Cats, movies and wine."
   location         : "Berlin, Germany"
   email            : "oliwiagolec@gmail.com"
-  uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "tortila"
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
   linkedin         : "oliwia-zaremba-3678a7114"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          : "tortilato"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -234,8 +174,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -245,7 +184,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: false
       share: false
       related: false
       header:
@@ -260,7 +198,6 @@ defaults:
       layout: home
       author_profile: true
       read_time: false
-      comments: false
       share: false
       related: false
       header:
