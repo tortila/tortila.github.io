@@ -3,13 +3,12 @@ layout: single
 permalink: /about/
 title: "About me"
 slug: about
-comments: false
 ---
 
 ### About me
 I'm Oliwia and I currently live in Berlin. When I'm not writing new content for this blog, I'm working as a software engineer, watching movies or reading about movies. I'm probably also cuddling with my cat.
 
-{% include figure image_path="/assets/images/chlebson.jpg" caption="His name is Jimmy. Not really, but that's what we tell everyone. His real name is hard to pronounce." %}{: .align-center}
+{% include figure image_path="/assets/images/chlebson.jpg" caption="The cat" %}{: .align-center}
 
 My professional interests mostly include software quality, reliability and Continuous Delivery.
 

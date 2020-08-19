@@ -5,7 +5,6 @@ date:   2018-01-28 20:30:00 +0100
 permalink: dealing-with-flaky-tests
 categories: ["Software Engineering"]
 slug: dealing-with-flaky-tests
-comments: true
 header:
   overlay_image: assets/images/tim-gouw-128115.jpg
   og_image: assets/images/tim-gouw-128115.jpg

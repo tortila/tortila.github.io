@@ -2,7 +2,6 @@
 layout: archive
 permalink: /elsewhere/
 title: "Me elsewhere"
-comments: false
 ---
 
 {% include group-by-array collection=site.external_publications field="category" %}

@@ -5,7 +5,6 @@ date:   2019-05-07 23:05:00 +0100
 permalink: 2017-reading-challenge
 categories: ["Reading"]
 slug: 2017-reading-challenge
-comments: true
 header:
   overlay_image: assets/images/patrick-tomasso-71909-unsplash.jpg
   og_image: assets/images/patrick-tomasso-71909-unsplash.jpg
